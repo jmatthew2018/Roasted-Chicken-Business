@@ -1,0 +1,33 @@
+body {
+    background-color: #fff3e0;
+    color: #5a3825;
+    font-family: Arial, sans-serif;
+}
+.hero {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.pricing-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffebcd;
+    border-radius: 10px;
+}
+.cta {
+    background-color: #a0522d;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+.pricing-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.modal-content {
+    background-color: #fff8e1;
+    color: #5a3825;
+}

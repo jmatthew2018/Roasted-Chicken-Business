@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Roast Chicken</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid hero">
+        <h1>Golden Roast Chicken</h1>
+        <p>The best roasted chicken you'll ever taste!</p>
+    </div>
+    
+    <div class="container text-center my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <img src="img/classic-roast.jpg" alt="Classic Roast Chicken">
+                    <h3>Classic Roast</h3>
+                    <p>Slow-roasted to perfection with our signature blend of herbs and spices.</p>
+                    <h2>$10</h2>
+                    <button class="btn btn-warning" onclick="openModal('Classic Roast')">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <img src="img/spicy-roast.jpg" alt="Spicy Roast Chicken">
+                    <h3>Spicy Roast</h3>
+                    <p>A fiery twist on our classic roast, packed with bold and spicy flavors.</p>
+                    <h2>$12</h2>
+                    <button class="btn btn-warning" onclick="openModal('Spicy Roast')">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <img src="img/herb-garlic-roast.jpg" alt="Herb & Garlic Roast Chicken">
+                    <h3>Herb & Garlic Roast</h3>
+                    <p>Infused with fresh garlic and aromatic herbs for a rich, savory taste.</p>
+                    <h2>$15</h2>
+                    <button class="btn btn-warning" onclick="openModal('Herb & Garlic Roast')">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid cta">
+        <h2>We'd Love to Hear from You</h2>
+        <button class="btn btn-light">Contact Us</button>
+    </div>
+    
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Order Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="orderText"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
